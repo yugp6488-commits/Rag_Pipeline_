@@ -1,0 +1,169 @@
+
+                                    --- loader.py logs ---
+
+.venv) PS D:\new\RAG-From-Scratch-main\01_document_loading> python loader.py
+─────────────────────────────────────────────────── Module 1 — Document Loading with Docling ───────────────────────────────────────────────────
+[docling] Converting: artificial_intelligence.pdf ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+D:\new\RAG-From-Scratch-main\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\yugpa\.cache\huggingface\hub\models--docling-project--docling-layout-heron. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+D:\new\RAG-From-Scratch-main\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\yugpa\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████| 770/770 [00:00<00:00, 5808.73it/s]
+D:\new\RAG-From-Scratch-main\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\yugpa\.cache\huggingface\hub\models--docling-project--docling-models. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+[docling] Converting: deep_learning.pdf ...
+[docling] Converting: information_retrieval.pdf ...
+[docling] Converting: large_language_model.pdf ...
+[docling] Converting: machine_learning.pdf ...
+[docling] Converting: natural_language_processing.pdf ...
+[docling] Converting: retrieval_augmented_generation.pdf ...
+[docling] Converting: semantic_search.pdf ...
+[docling] Converting: transformers.pdf ...
+[docling] Converting: vector_database.pdf ...
+                         Loaded Documents                          
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ File                               ┃ Pages ┃ Characters ┃ Title ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│ artificial_intelligence.pdf        │    25 │     86,172 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ deep_learning.pdf                  │    17 │     57,171 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ information_retrieval.pdf          │    10 │     24,139 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ large_language_model.pdf           │    22 │     50,882 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ machine_learning.pdf               │    18 │     59,256 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ natural_language_processing.pdf    │    13 │     30,481 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ retrieval_augmented_generation.pdf │     4 │     10,627 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ semantic_search.pdf                │     2 │      2,252 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ transformers.pdf                   │   107 │     77,830 │       │
+├────────────────────────────────────┼───────┼────────────┼───────┤
+│ vector_database.pdf                │     2 │      3,791 │       │
+└────────────────────────────────────┴───────┴────────────┴───────┘
+Saved: D:\new\RAG-From-Scratch-main\data\processed\artificial_intelligence.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\deep_learning.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\information_retrieval.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\large_language_model.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\machine_learning.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\natural_language_processing.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\retrieval_augmented_generation.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\semantic_search.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\transformers.md
+Saved: D:\new\RAG-From-Scratch-main\data\processed\vector_database.md
+
+✓ Loaded 10 documents.
+
+
+                        --- chunker.py ---
+                                                 Chunking Strategy Comparison                                                 
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Strategy          ┃ # Chunks ┃ Min chars ┃ Max chars ┃ Avg chars ┃ Sample chunk (first 80 chars)                           ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Fixed (512 chars) │       12 │        72 │       512 │       475 │ ## Artificial intelligence  Source: Wikipedia           │
+│                   │          │           │           │           │ (en.wikipedia.org) - Educational U                      │
+├───────────────────┼──────────┼───────────┼───────────┼───────────┼─────────────────────────────────────────────────────────┤
+│ Sentence (5 sent) │        8 │       623 │      1222 │       795 │ ## Artificial intelligence  Source: Wikipedia           │
+│                   │          │           │           │           │ (en.wikipedia.org) - Educational U                      │
+├───────────────────┼──────────┼───────────┼───────────┼───────────┼─────────────────────────────────────────────────────────┤
+│ Recursive (512)   │       14 │       208 │       498 │       414 │ ## Artificial intelligence Source: Wikipedia            │
+│                   │          │           │           │           │ (en.wikipedia.org) - Educational Us                     │
+└───────────────────┴──────────┴───────────┴───────────┴───────────┴─────────────────────────────────────────────────────────┘
+
+✓ Chunking demo complete.
+(.venv) PS D:\new\RAG-From-Scratch-main\02_chunking> 
+
+                            --- embedder.py ---
+
+ ─────────────────────────────────────────────────── Module 3 — Embeddings ────────────────────────────────────────────────────
+Loading local embedding model...
+[embed] Loading local model: all-MiniLM-L6-v2 ...
+Loading weights: 100%|███████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 4623.43it/s]
+D:\new\RAG-From-Scratch-main\03_embeddings\embedder.py:85: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self._dim = self._model.get_sentence_embedding_dimension()
+[embed] Model ready. Dimension: 384
+Embedding 12 sentences...
+
+Cosine Similarities (sample):
+  RAG1 vs RAG2                 0.415 ████████████
+  RAG1 vs Bio1                 0.021 
+  Bio1 vs Bio2                 0.125 ███
+  Bio1 vs History1             0.083 ██
+  History1 vs History2         0.199 █████
+
+PCA plot saved → D:\new\RAG-From-Scratch-main\data\processed\embeddings_pca.png
+
+        --- 04_vector_db/chroma ---
+
+──────────────────────────────────────────── Module 4a — ChromaDB Vector Store ──────────────────────────────────────────────
+[embed] Loading local model: all-MiniLM-L6-v2 ...
+Loading weights: 100%|███████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 5609.11it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+D:\new\RAG-From-Scratch-main\03_embeddings\embedder.py:85: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self._dim = self._model.get_sentence_embedding_dimension()
+[embed] Model ready. Dimension: 384
+[chroma] Collection 'demo_collection' ready. Docs in store: 0
+[chroma] Deleted collection 'demo_collection'
+[chroma] Collection 'demo_collection' ready. Docs in store: 0
+[chroma] Upserted 8 chunks. Total: 8
+
+Query: What is deep learning?
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Score ┃ Source           ┃ Text                                                                             ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 0.700 │ intro_to_ai.txt  │ e their environment and act to achieve goals. Machine learning, a subset of AI,  │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.400 │ intro_to_nlp.txt │ Natural Language Processing (NLP) is the branch of AI that focuses on human lang │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.395 │ intro_to_ai.txt  │ Artificial intelligence (AI) is intelligence demonstrated by machines. AI resear │
+└───────┴──────────────────┴──────────────────────────────────────────────────────────────────────────────────┘
+
+Query: How does RAG reduce hallucinations?
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Score ┃ Source           ┃ Text                                                                             ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 0.649 │ intro_to_rag.txt │ answer. RAG has three stages: indexing (process documents), retrieval (find rele │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.214 │ intro_to_rag.txt │ Retrieval-Augmented Generation (RAG) improves language model outputs by retrievi │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.048 │ intro_to_rag.txt │ ination by grounding responses in real documents.                                │
+└───────┴──────────────────┴──────────────────────────────────────────────────────────────────────────────────┘
+
+Query: What are transformer models?
+┏━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Score ┃ Source           ┃ Text                                                                             ┃
+┡━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 0.592 │ intro_to_nlp.txt │ BERT and GPT are foundational transformer models.                                │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.313 │ intro_to_nlp.txt │ t classification, named entity recognition, machine translation, and question an │
+├───────┼──────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ 0.175 │ intro_to_ai.txt  │ e their environment and act to achieve goals. Machine learning, a subset of AI,  │
+└───────┴──────────────────┴──────────────────────────────────────────────────────────────────────────────────┘
+
+✓ ChromaDB demo complete.
+
+    --- 04_vector_db/redis ---
+
+(.venv) PS D:\new\RAG-From-Scratch-main\04_vector_db\redis> docker compose up -d redis                                        
+>> docker compose ps                                                                                                          
+time="2026-10-30T12:30:24+05:30" level=warning msg="D:\\new\\RAG-From-Scratch-main\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] up 20/20   
+ ✔ Image redis/redis-stack:latest          Pulled                                                                       116.2s
+ ✔ Network rag_network                     Created                                                                        0.0s
+ ✔ Volume rag-from-scratch-main_redis_data Created                                                                        0.0s
+ ✔ Container rag_redis                     Started                                                                        1.0s
+                   
+What's next:
+    Filter, search, and stream logs from all your Compose services
+    in one place with Docker Desktop's Logs view. docker-desktop://dashboard/logs
+time="2026-10-30T12:32:22+05:30" level=warning msg="D:\\new\\RAG-From-Scratch-main\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+NAME        IMAGE                      COMMAND            SERVICE   CREATED         STATUS PORTS
+rag_redis   redis/redis-stack:latest   "/entrypoint.sh"   redis     2 seconds ago   Up Less than a second (health: starting) 0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp, 0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp
+

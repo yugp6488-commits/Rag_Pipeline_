@@ -141,7 +141,7 @@ Reads every PDF in `data/raw/`, extracts text, tables and headings, and saves Ma
 │ transformers.pdf                   │   107 │     76,574 │
 │ retrieval_augmented_generation.pdf │     4 │     10,627 │
 │ ...                                │       │            │
-```
+```   
 
 **See the result:** open `data/processed/vector_database.md`. It is clean Markdown.
 

@@ -149,7 +149,7 @@ Query: What are transformer models?
 
 ✓ ChromaDB demo complete.
 
-    --- 04_vector_db/redis ---
+    --- 04_vector_db/redis --- 
 
 (.venv) PS D:\new\RAG-From-Scratch-main\04_vector_db\redis> docker compose up -d redis                                        
 >> docker compose ps                                                                                                          
